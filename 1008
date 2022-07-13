@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	double A, B;
+	cin >> A;
+	cin >> B;
+
+	cout << fixed;
+	cout.precision(10);
+
+	double ans = A / B;
+	cout << ans;
+
+	return 0;
+}
+
