@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+	int A, B, first, second, third;
+	cin >> A >> B;
+
+	first = B % 10;
+	second = (B % 100)/10;
+	third = B / 100;
+
+	cout << first * A << endl;
+	cout << second * A << endl;
+	cout << third * A << endl;
+
+	cout << (first * A) + (second * A * 10) + (third * A * 100);
+
+
+
+	return 0;
+}
+
