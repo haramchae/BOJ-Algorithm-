@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+	int A, B, C, hour, min;
+	cin >> A >> B >> C;
+
+	hour = C / 60;
+	min = C - hour * 60;
+
+	B = B + min;
+	A = A + hour;
+
+	while (B > 59) {
+		B = B - 60;
+		A = A + 1;
+		
+	}
+
+	while (A > 23) {
+		A = A - 24;
+	}
+
+	cout << A << " " << B << endl;
+	
+
+	return 0;
+}
