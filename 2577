@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int A, B, C, sum;
+    cin >> A >> B >> C;
+    sum = A * B * C;
+    int ctn[10] = {};
+
+    while (sum != 0) {
+        ctn[sum%10]++;
+        sum/=10;
+    }
+   
+
+    for (int i = 0; i < 10; i++) {
+        cout << ctn[i] << "\n";
+    }
+
+
+
+    return 0;
+}
