@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int tmp, cnt = 0;
+    int ctn[42] = {};
+    
+    for(int i =0; i<10; i++){
+        cin>>tmp;
+        ctn[tmp%42]++;
+    }
+    
+    for(int arr: ctn){
+        if(arr>0){
+            cnt++;
+        }
+    }
+    
+    cout<<cnt;
+    
+    return 0;
+}
