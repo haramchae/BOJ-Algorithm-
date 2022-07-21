@@ -1,0 +1,26 @@
+#include<iostream>
+#include <string.h>
+using namespace std;
+
+int main() {
+    int N, sum, score;
+    cin >> N;
+    char ctn[80];
+    for (int i = 0; i < N; i++) {
+        sum = 0;
+        score = 1;
+        cin >> ctn;
+        for (int j = 0; j < strlen(ctn); j++) {
+            if (ctn[j] == 'O') {
+                sum += score;
+                score++;
+            }
+            else if (ctn[j] == 'X') {
+                score = 1;
+            }
+        }
+        cout << sum << "\n";
+        
+    }
+    return 0;
+}
